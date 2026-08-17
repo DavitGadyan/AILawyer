@@ -1,0 +1,33 @@
+/* Web-only polish. Native ignores this file. */
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #efefee;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+}
+
+/*
+ * react-native-web renders Pressable as a <div role="button">, which picks up the
+ * default focus ring on click. Keep the ring for keyboard users only.
+ */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #937e6d;
+  outline-offset: 2px;
+}
+
+/* The app supplies its own scroll containers; hide the cosmetic scrollbars. */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

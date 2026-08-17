@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "AI Lawyer",
+    "slug": "ai-lawyer-immigration",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ailawyer",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#EFEFEE",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.ailawyer.immigration"
+    },
+    "android": {
+      "package": "app.ailawyer.immigration",
+      "adaptiveIcon": {
+        "backgroundColor": "#EFEFEE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#EFEFEE",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 96
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false,
+      "reactCompiler": true
+    }
+  }
+}
